@@ -10,7 +10,16 @@ export default {
       languageIn: 'ECMASCRIPT6',
       languageOut: 'ECMASCRIPT5',
       compilationLevel: 'ADVANCED',
-      warningLevel: 'DEFAULT'
+      warningLevel: 'VERBOSE',
+      externs: [{src:`var _; var $; var ko; 
+                      ko.applyBindings = function(vm) {};
+                      ko.computed = function(a,b) {};
+                      ko.observable = function(a) {};
+                      var PersonViewModel;
+                      PersonViewModel.firstName = function(){};
+                      PersonViewModel.lastName = function(){};
+                      PersonViewModel.fullName = function(fn){};
+               `}],
     })
   ]
 }

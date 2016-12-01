@@ -3,6 +3,7 @@
   <head>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/lodash/lodash.min.js"></script>
+    <script src="node_modules/knockout/build/output/knockout-latest.js"></script>
 
     <style>
       .demo{
@@ -10,7 +11,6 @@
         padding: 5px;
         padding-left: 20px;
         width: 300px;
-        height: 100px;
         border-radius: 10px;
         background-color:lightblue;
         color: black;
@@ -21,6 +21,8 @@
   </head>
 
   <body>
+    <h1>Closure Compiler Scenarios</h1>
+
     <div class="demo">
       <h4>jQuery</h4>
       <button id="jq-greetBtn">Greet</button>
@@ -31,6 +33,13 @@
       <h4>lodash</h4>
       <button id="ld-greeterBtn">Greet</button>
       <div id="ld-greeting"></div>
+    </div>
+
+    <div class="demo">
+      <h4>knockout</h4>
+      <p>First name: <input data-bind="value: firstName" /></p>
+      <p>Last name: <input data-bind="value: lastName" /></p>
+      <p>Full name: <strong data-bind="text: fullName"></strong></p>
     </div>
 
     <script src="dist/build.js"></script>
