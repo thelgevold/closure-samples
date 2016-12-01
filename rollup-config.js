@@ -15,10 +15,6 @@ export default {
                       ko.applyBindings = function(vm) {};
                       ko.computed = function(a,b) {};
                       ko.observable = function(a) {};
-                      var PersonViewModel;
-                      PersonViewModel.firstName = function(){};
-                      PersonViewModel.lastName = function(){};
-                      PersonViewModel.fullName = function(fn){};
                `}],
     })
   ]
