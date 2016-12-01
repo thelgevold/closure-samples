@@ -1,0 +1,38 @@
+<html>
+
+  <head>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/lodash/lodash.min.js"></script>
+
+    <style>
+      .demo{
+        border: 1px solid gray;
+        padding: 5px;
+        padding-left: 20px;
+        width: 300px;
+        height: 100px;
+        border-radius: 10px;
+        background-color:lightblue;
+        color: black;
+        margin-bottom: 10px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="demo">
+      <h4>jQuery</h4>
+      <button id="jq-greetBtn">Greet</button>
+      <div id="jq-greeting"></div>
+    </div>
+
+    <div class="demo">
+      <h4>lodash</h4>
+      <button id="ld-greeterBtn">Greet</button>
+      <div id="ld-greeting"></div>
+    </div>
+
+    <script src="dist/build.js"></script>
+  </body>
+</html>  
