@@ -11,7 +11,9 @@ export default {
       languageOut: 'ECMASCRIPT5',
       compilationLevel: 'ADVANCED',
       warningLevel: 'VERBOSE',
-      externs: [{src:`var _; var $; var ko; 
+      externs: [{src:`var _; 
+                      var jQuery; jQuery.fadeIn = function(){}; 
+                      var ko; 
                       ko.applyBindings = function(vm) {};
                       ko.computed = function(a,b) {};
                       ko.observable = function(a) {};

@@ -4,10 +4,10 @@ export class GreeterJQuery {
   constructor() {
 
     let greetingService = new GreetingService();
-
-    $('#jq-greetBtn').click(function(){
+    jQuery('#jq-greeting').fadeIn();
+    jQuery('#jq-greetBtn').click(function(){
       let greeting = greetingService.getGreetingMessage();
-      $('#jq-greeting').text(greeting);
+      jQuery('#jq-greeting').text(greeting);
     });
   }
 }
