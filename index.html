@@ -35,13 +35,21 @@
       <div id="ld-greeting"></div>
     </div>
 
-    <div class="demo">
-      <h4>knockout</h4>
+    <div id="sample1" class="demo">
+      <h4>knockout (1)</h4>
       <p>First name: <input data-bind="value: firstName" /></p>
       <p>Last name: <input data-bind="value: lastName" /></p>
       <p>Full name: <strong data-bind="text: fullName"></strong></p>
     </div>
 
+    <div id="sample2" class="demo">
+      <h4>knockout (2)</h4>
+      <p>First name: <input data-bind="value: fName" /></p>
+      <p>Last name: <input data-bind="value: lName" /></p>
+      <p>Full name: <strong data-bind="text: fullName"></strong></p>
+    </div>
+
     <script src="dist/build.js"></script>
+    <script src="dist/person.js"></script>
   </body>
 </html>  

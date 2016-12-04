@@ -5,4 +5,4 @@ import { PersonViewModel } from './knockout/person-model';
 let greeterJQuery = new GreeterJQuery();
 let greeterLodash = new GreeterLodash();
 
-ko.applyBindings(PersonViewModel);
+ko.applyBindings(PersonViewModel, document.getElementById('sample1'));

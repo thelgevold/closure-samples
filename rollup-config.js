@@ -14,7 +14,7 @@ export default {
       externs: [{src:`var _; 
                       var jQuery; jQuery.fadeIn = function(){}; 
                       var ko; 
-                      ko.applyBindings = function(vm) {};
+                      ko.applyBindings = function(a, b) {};
                       ko.computed = function(a,b) {};
                       ko.observable = function(a) {};
                `}],
