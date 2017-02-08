@@ -5,16 +5,16 @@
   "author": "Torgeir Helgevold",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c rollup-config.js && ./build.sh",
+    "build": "rollup -c rollup-config.js && ./build.sh && modules/build.sh",
     "start": "lite-server"
   },
   "devDependencies": {
-    "google-closure-compiler-js": "^20161024.0.0",
+    "google-closure-compiler": "^20170124.0.0",
+    "google-closure-compiler-js": "^20170124.0.0",
+    "google-closure-library": "^20170124.0.0",
     "lite-server": "^2.2.2",
     "rollup": "^0.36.0",
-    "rollup-plugin-closure-compiler-js": "^1.0.2",
-    "google-closure-compiler": "^20161024.3.0",
-    "google-closure-library": "^20161024.0.0"
+    "rollup-plugin-closure-compiler-js": "^1.0.2"
   },
   "dependencies": {
     "jquery": "^3.1.1",
