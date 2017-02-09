@@ -1,0 +1,1 @@
+console.log(3);console.log("JoeSmith");console.log(10);console.log("Torgeir");console.log(5);var a=new function(){};a.b="Joe";a.c="Smith";a.a=30;console.log(a.b+" "+a.c+", age: "+a.a);console.log(a);var b=new function(){};b.a="Blue";console.log("The car is "+b.a);

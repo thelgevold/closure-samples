@@ -5,7 +5,7 @@
   "author": "Torgeir Helgevold",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c rollup-config.js && ./build.sh && modules/build.sh",
+    "build": "rollup -c rollup-config.js && ./build.sh && modules/build.sh && types/build.sh",
     "start": "lite-server"
   },
   "devDependencies": {
