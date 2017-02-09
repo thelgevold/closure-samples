@@ -72,6 +72,7 @@ class Adder {
   /**
    * @param val1 {T}
    * @param val2 {T}
+   * @return {T}
    */
   add(val1, val2) {
     return val1 + val2;
