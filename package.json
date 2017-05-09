@@ -6,15 +6,20 @@
   "license": "MIT",
   "scripts": {
     "build": "rollup -c rollup-config.js && ./build.sh && modules/build.sh && types/build.sh",
+    "prepack": "prepack app/main.js --out dist/app-prepack.js",
+    "prepack-with-closure": "npm run prepack && ./app/build.sh",
+    "uglify": "uglifyjs --mangle-toplevel --output dist/app-prepack-uglify.js -- dist/app-prepack-uglify.js",
     "start": "lite-server"
   },
   "devDependencies": {
-    "google-closure-compiler": "^20170124.0.0",
+    "google-closure-compiler": "20170409.0.0",
     "google-closure-compiler-js": "^20170124.0.0",
     "google-closure-library": "^20170124.0.0",
     "lite-server": "^2.2.2",
+    "prepack": "^0.2.1",
     "rollup": "^0.36.0",
-    "rollup-plugin-closure-compiler-js": "^1.0.2"
+    "rollup-plugin-closure-compiler-js": "^1.0.2",
+    "uglifyjs": "^2.4.10"
   },
   "dependencies": {
     "jquery": "^3.1.1",

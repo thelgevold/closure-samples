@@ -1,0 +1,1 @@
+for(var a=["BMW","Ferrari","Lamborghini","Porsche"],b=0;b<a.length;b++)"B"===a[b][0]&&console.log(a[b]);for(var c=["USA","Norway","Germany","Sweden"],b=0;b<c.length;b++)"U"===c[b][0]&&console.log(c[b]);
